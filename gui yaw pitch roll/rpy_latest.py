@@ -15,7 +15,7 @@ rpy_frame = Frame(root, bg="black")
 rpy_frame.place(x=25, y=25)
 
 
-img = ImageTk.PhotoImage(Image.open("C:/Users/ASUS/Desktop/İnformatik/Hyperloop/Arayüz/gui yaw pitch roll/angle.png").resize((250,250)))
+img = ImageTk.PhotoImage(Image.open("angle.png").resize((250,250)))
 
 def rotate_rimg(degrees):
     new_image = rimg.rotate(-int(degrees), fillcolor="black")
@@ -37,7 +37,7 @@ def rotate_yimg(degrees):
 
 
 
-rimg = Image.open("C:/Users/ASUS/Desktop/İnformatik/Hyperloop/Arayüz/gui yaw pitch roll/roll.png").resize((60,60))
+rimg = Image.open("roll.png").resize((60,60))
 width, height = rimg.size
 rimg.thumbnail((width, height))
 photorimg = ImageTk.PhotoImage(rimg)
@@ -58,7 +58,7 @@ rs.set(0)
 
 
 
-pimg = Image.open("C:/Users/ASUS/Desktop/İnformatik/Hyperloop/Arayüz/gui yaw pitch roll/pitch.png").resize((100,100))
+pimg = Image.open("pitch.png").resize((100,100))
 width, height = pimg.size
 pimg.thumbnail((width, height))
 photopimg = ImageTk.PhotoImage(pimg)
@@ -79,7 +79,7 @@ ps.set(0)
 
 
 
-yimg = Image.open("C:/Users/ASUS/Desktop/İnformatik/Hyperloop/Arayüz/gui yaw pitch roll/yaw.png").resize((100,100))
+yimg = Image.open("yaw.png").resize((100,100))
 width, height = yimg.size
 yimg.thumbnail((width, height))
 photoyimg = ImageTk.PhotoImage(yimg)
